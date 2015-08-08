@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "babel": "^5.8.21",
+    "jquery": "^2.1.4",
     "moment": "^2.10.6",
     "requirejs": "^2.1.20",
     "webpack": "^1.11.0"
