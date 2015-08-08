@@ -1,0 +1,10 @@
+{
+  "name": "client_app_template",
+  "version": "1.0.0",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "moment": "^2.10.6",
+    "requirejs": "^2.1.20",
+    "webpack": "^1.11.0"
+  }
+}
