@@ -1,8 +1,7 @@
 module.exports = {
-	context: __dirname,
     entry: "./app.js",
     output: {
-        path: __dirname,
+        path: "./dist",
         filename: "./bundle.js"
     },
     module: {
@@ -12,6 +11,6 @@ module.exports = {
     },
     devServer: {
         hot: true,
-        port: 3003
+        port: 3000
     }
 };
