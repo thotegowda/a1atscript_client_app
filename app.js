@@ -1,12 +1,11 @@
 requirejs.config({
 	baseUrl:'./',
 	paths: {
-		jquery: 'node_modules/jquery/dist/jquery',
-		moment: 'node_modules/moment/moment'
+		jquery: 'node_modules/jquery/dist/jquery.min',
+		moment: 'node_modules/moment/min/moment.min'
 	}
 });
 
-requirejs(['jquery', 'message'], function($, message) {
-	$('#date').html(message);
-});
+require("./app.css");
+require(['./main']);
 

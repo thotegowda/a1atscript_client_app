@@ -1,11 +1,19 @@
 {
   "name": "client_app_template",
   "version": "1.0.0",
+  "scripts": {
+    "bundlejs": "./node_modules/webpack/bin/webpack.js",
+    "watch": "./node_modules/webpack/bin/webpack.js -w",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
   "dependencies": {
     "babel": "^5.8.21",
+    "css-loader": "^0.15.6",
     "jquery": "^2.1.4",
     "moment": "^2.10.6",
     "requirejs": "^2.1.20",
-    "webpack": "^1.11.0"
+    "style-loader": "^0.12.3",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
   }
 }
