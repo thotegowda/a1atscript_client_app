@@ -6,11 +6,12 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.js$/, exclude: /node_modules/, loader:'webpack-traceur?annotations&runtime'}
         ]
     },
     devServer: {
         hot: true,
         port: 3000
     }
+   
 };
