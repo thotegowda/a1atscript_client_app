@@ -1,3 +1,4 @@
+var ngAnnotatePlugin = require("ng-annotate-webpack-plugin");
 module.exports = {
     entry: "./app.js",
     output: {
@@ -6,9 +7,21 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader:'webpack-traceur?annotations&runtime'}
+            { 
+                test: /\.js$/, 
+                exclude: /node_modules/, 
+                loader: 'babel',
+                query: {
+                  optional: ['es7.decorators'],
+                  stage: 0
+                }
+            }
         ]
     },
+    plugins: [
+        new ngAnnotatePlugin({add: true})
+
+    ],
     devServer: {
         hot: true,
         port: 3000

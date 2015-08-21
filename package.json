@@ -7,6 +7,8 @@
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot"
   },
   "dependencies": {
+    "a1atscript": "^0.4.4",
+    "angular": "^1.4.4",
     "angular2": "^2.0.0-alpha.25",
     "babel": "^5.8.21",
     "babel-core": "^5.8.21",
@@ -24,5 +26,8 @@
     "webpack-traceur-loader": "^0.3.0",
     "zone": "^0.3.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "es6-shim": "^0.33.1",
+    "ng-annotate-webpack-plugin": "^0.1.2"
+  }
 }
