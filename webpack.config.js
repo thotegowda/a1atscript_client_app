@@ -7,15 +7,15 @@ module.exports = {
     },
     module: {
         loaders: [
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: 'babel',
+            { test: /\.css$/, loader: "style-loader!css-loader" },
+            { test: /\.js$/,  exclude: /node_modules/,  loader: 'babel',
                 query: {
                   optional: ['es7.decorators'],
                   stage: 0
                 }
             }
+
+
         ]
     },
     plugins: [
